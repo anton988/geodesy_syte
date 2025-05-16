@@ -1,0 +1,18 @@
+<!-- Блок контактов -->
+<div class="contact-card mb-4">
+    <h4 class="text-center unbounded-font">Контакты</h4>
+    <hr>
+    <p>
+        <strong>Телефон:</strong> <a href="tel:{{ contact.phone }}" class="text-dark">{{ contact.phone }}</a>
+        <span class="messenger-icons">
+            <a href="https://wa.me/79160985520" target="_blank">
+                <img src="{{ url_for('static', filename='images/icons/whatsapp.svg') }}" alt="WhatsApp" class="whatsapp-icon">
+            </a>
+            <a href="https://t.me/towatitan" target="_blank">
+                <img src="{{ url_for('static', filename='images/icons/telegram.svg') }}" alt="Telegram" class="telegram-icon">
+            </a>
+        </span>
+    </p>
+    <p><strong>Email:</strong> <a href="mailto:{{ contact.email }}" class="text-dark">{{ contact.email }}</a></p>
+    <p><strong>Часы работы:</strong> {{ contact.work_hours }}</p>
+</div>

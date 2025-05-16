@@ -1,0 +1,19 @@
+<!-- Форма обратного звонка -->
+<div class="callback-form">
+    <h5 class="unbounded-font">Заказать обратный звонок</h5>
+    <form action="{{ url_for('callback') }}" method="POST" novalidate>
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+            <input type="tel" class="form-control" name="phone" 
+                   placeholder="Телефон" required>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" name="message" rows="3" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block unbounded-font">
+            Заказать звонок
+        </button>
+    </form>
+</div>

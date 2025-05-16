@@ -1,0 +1,29 @@
+/* Прозрачная навигация */
+.navbar {
+    background-color: transparent !important;
+    padding: 15px 0;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+}
+
+.nav-item.active .nav-link {
+    color: #000 !important;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.95) !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+}

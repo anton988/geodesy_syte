@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}О нас{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <h4>Геодезические решения любых задач</h4>
+        
+        <div class="card bg-light mb-4">
+            <div class="card-body">
+                <p>Мы — команда профессиональных геодезистов, выпускников МИИГАиК, объединённых многолетним опытом работы. 
+                Нас возглавляет Антон Титков, который лично контролирует качество каждого проекта.</p>
+
+                <p>Каждый специалист в нашей дружной команде обладает большим опытом и уникальными знаниями в отрасли, 
+                что позволяет находить индивидуальный подход для выполнения работ любой направленности – 
+                будь то создание ППГР (проекта производства геодезических работ), без которого не обходится ни одна стройка, 
+                или камеральная работа по оформлению исполнительной документации с последующей сдачей зазчику.</p>
+                
+                <p>Работаем с современным геодезическим оборудованием, что позволяет нам решать задачи любой сложности — 
+                от выноса границ участка до сопровождения масштабного строительства.</p>
+            </div>
+        </div>
+        
+        <h3 class="mt-4 border-bottom pb-2 text-center">Наши преимущества</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Профессиональный подход</h5>
+                        <p class="card-text">Точные расчёты и чёткие отчёты</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Оперативность</h5>
+                        <p class="card-text">Понимаем, когда важны не только миллиметры, но и сроки</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Гибкость</h5>
+                        <p class="card-text">Помогаем и крупным застройщикам, и частным клиентам</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Прозрачность</h5>
+                        <p class="card-text">Сразу озвучиваем сроки и стоимость без скрытых платежей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="alert alert-info mt-4">
+            <h5 class="alert-heading">Работаем по всей Москве и области</h5>
+            <p class="mb-0">Первая консультация — бесплатно</p>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        {% include "components/contacts.html" %}
+        {% include "components/callback_form.html" %}
+    </div>
+</div>
+{% endblock %}

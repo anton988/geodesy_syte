@@ -1,0 +1,28 @@
+/* Настройки шрифта Unbounded */
+.unbounded-font,
+h1, h2, h3, h4, h5, h6,
+.navbar-nav .nav-link,
+.lead,
+.cards-container h5,
+.service-title,
+.contact-card h4,
+.callback-form h5,
+.btn-unbounded,
+.card-title {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500; /* Средняя насыщенность по умолчанию */
+}
+
+/* Жирное начертание для заголовков */
+h1, h2, h3, h4, h5, h6,
+.service-title,
+.contact-card h4,
+.callback-form h5 {
+    font-weight: 700;
+}
+
+/* Основной текст */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+}

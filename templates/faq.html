@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+{% block title %}Частые вопросы{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center mb-5 unbounded-font">Часто задаваемые вопросы</h3>
+            
+            <!-- Общие вопросы -->
+            <div class="faq-category">
+                <h4 class="unbounded-font mb-4"><i class="fas fa-question-circle me-2"></i> Общие вопросы</h4>
+                
+                <div class="faq-item">
+                    <div class="faq-question" data-toggle="collapse" href="#q1">
+                        Как заказать услугу?
+                        <i class="fas fa-chevron-down float-end"></i>
+                    </div>
+                    <div class="faq-answer collapse" id="q1">
+                        <div class="p-3">
+                            Оставьте заявку через форму на "Главной"/"О нас" страницах сайта или позвоните нам. Наш специалист уточнит детали 
+                            и подготовит индивидуальное коммерческое предложение в течение дня.
+                        </div>
+                    </div>
+                    <div class="faq-question" data-toggle="collapse" href="#q10">
+                        Вы работаете по договору?
+                        <i class="fas fa-chevron-down float-end"></i>
+                    </div>
+                    <div class="faq-answer collapse" id="q10">
+                        <div class="p-3">
+                            Да, мы заключаем договор в простой письменной форме (электронно или на бумаге). 
+                            В нём прописаны все условия, сроки и гарантии.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" data-toggle="collapse" href="#q2">
+                        Какие документы нужны для начала работ?
+                        <i class="fas fa-chevron-down float-end"></i>
+                    </div>
+                    <div class="faq-answer collapse" id="q2">
+                        <div class="p-3">
+                            Если вы чатсный клиент, то для большинства услуг достаточно правоустанавливающих документов 
+                            на земельный участок. Для строительных организаций перечень документов обсуждается индивидуально.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Юридические вопросы -->
+            <div class="faq-category mt-5">
+                <h4 class="unbounded-font mb-4"><i class="fas fa-balance-scale me-2"></i> Юридические аспекты</h4>
+                
+                <div class="faq-item">
+                    <div class="faq-question" data-toggle="collapse" href="#q4">
+                        Нужно ли согласовывать топосъемку?
+                        <i class="fas fa-chevron-down float-end"></i>
+                    </div>
+                    <div class="faq-answer collapse" id="q4">
+                        <div class="p-3">
+                            Да, топографическая съемка подлежит согласованию в:
+                            <ul>
+                                <li>Отделе архитектуры</li>
+                                <li>Эксплуатирующих организациях</li>
+                                <li>Отделе подземных сооружений</li>
+                            </ul>
+                            Мы полностью берем на себя процесс согласования.
+                        </div>
+                    </div>
+                    <div class="faq-question" data-toggle="collapse" href="#q7">
+                        Вы работаете официально? Как вы платите налоги?
+                        <i class="fas fa-chevron-down float-end"></i>
+                    </div>
+                    <div class="faq-answer collapse" id="q7">
+                        <div class="p-3">
+                            Да, мы зарегистрированы как самозанятые и платим налог (НПД 4–6%). 
+                            Все платежи проходят легально, а вы получаете чеки через «Мой Налог» сразу же после оплаты.
+                        </div>
+                    </div>
+                    <div class="faq-question" data-toggle="collapse" href="#q8">
+                        Вы работаете официально? Как вы платите налоги?
+                        <i class="fas fa-chevron-down float-end"></i>
+                    </div>
+                    <div class="faq-answer collapse" id="q8">
+                        <div class="p-3">
+                            Работа без юрлица снижает наши расходы, что делает цены выгоднее для вас. 
+                            Все обязательства фиксируются в договоре, а документы имеют юридическую силу.
+                        </div>
+                    </div>
+                    <div class="faq-question" data-toggle="collapse" href="#q9">
+                        Можно ли работать с вами компаниям (ИП/ООО)?
+                        <i class="fas fa-chevron-down float-end"></i>
+                    </div>
+                    <div class="faq-answer collapse" id="q9">
+                        <div class="p-3">
+                            Да, мы оформляем все необходимые документы (СЭЗ, акты, чеки), 
+                            которые подходят для отчётности. Налоговая принимает их наравне с документами от юрлиц.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Гарантии -->
+            <div class="faq-category mt-5">
+                <h4 class="unbounded-font mb-4"><i class="fas fa-shield-alt me-2"></i> Гарантии и оплата</h4>
+                
+                <div class="faq-item">
+                    <div class="faq-question" data-toggle="collapse" href="#q5">
+                        Какие гарантии вы предоставляете?
+                        <i class="fas fa-chevron-down float-end"></i>
+                    </div>
+                    <div class="faq-answer collapse" id="q5">
+                        <div class="p-3">
+                            <ul>
+                                <li>Гарантия соответствия ГОСТ и СП</li>
+                                <li>Страхование профессиональной ответственности</li>
+                                <li>Бесплатные корректировки в течение 14 дней</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-toggle="collapse" href="#q6">
+                        Каким образом происходит взаиморассчет?
+                        <i class="fas fa-chevron-down float-end"></i>
+                    </div>
+                    <div class="faq-answer collapse" id="q6">
+                        <div class="p-3">
+                            Мы — самозанятые, поэтому вам не нужно ждать бухгалтерию: 
+                            СЭЗ (Счёт-заказ) формируется автоматически после оплаты. 
+                            Это легально, быстро и избавляет вас от лишних задержек. 
+                            Мы принимаем как безналичный перевод на реквизиты самозанятого, так и оплату наличными.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Технические вопросы -->
+            <div class="faq-category mt-5">
+                <h4 class="unbounded-font mb-4"><i class="fas fa-tools me-2"></i> Технические аспекты</h4>
+                
+                <div class="faq-item">
+                    <div class="faq-question" data-toggle="collapse" href="#q3">
+                        Какое оборудование вы используете?
+                        <i class="fas fa-chevron-down float-end"></i>
+                    </div>
+                    <div class="faq-answer collapse" id="q3">
+                        <div class="p-3">
+                            Работаем с профессиональным оборудованием ведущих брендов:
+                            <ul>
+                                <li>Тахеометры Sokkia и Leica</li>
+                                <li>GPS/GNSS приемники PrinCe и Sokkia</li>
+                                <li>3D-сканеры Faro</li>
+                                <li>Лазерные нивелиры Trimble</li>
+                                <li>Приборы вертикального проектирования RGK</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
